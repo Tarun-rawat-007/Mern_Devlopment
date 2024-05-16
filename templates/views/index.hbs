@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delevery service</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="phone.css" media="screen and (max-width: 1170px)"  rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+ 
+}
+:root{
+    --navbar-height: 59px;       /*varibles*/
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+/*nav bar logo and image styling */
+#logo{
+    margin: 10px 24px;
+}
+#logo img{
+    height: 50px ;
+    margin: 3px 6px;
+    
+
+}
+/* navbar list item styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    /* color: rgb(236, 27, 27); */
+    list-style: none; /*remove dot from links*/
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+/* Home section */
+#home::before{
+    content:"";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* SERVIVES SECTION */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 3px 6px ;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+}
+
+
+
+/* utility class  heading*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+
+}
+.h-secondry{
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(250, 48, 48);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+/* client section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#client-section{
+    
+    position: relative;
+   
+}
+#client-section::before{
+   
+    content: "";
+    position: absolute;
+    background: url(bg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients img{
+   height: 124px;
+  
+}
+.client-item{
+    padding: 34px;
+
+
+}
+/* contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpg') no-repeat center center/cover;
+
+}
+
+
+
+/* form */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    
+
+}
+  #btn{
+            background-color: #ff9900d3;
+            border: 4px solid rgb(131, 142, 153);
+            color: rgb(5, 5, 5);
+            cursor: pointer;
+            font-size: 1.2rem;
+           width: 100%;
+        }
+        #btn:hover{
+            background-color: rgb(46, 165, 16);
+        }
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+footer{
+    background: rgb(46, 45, 45);
+    color: white;
+    padding: 9px 20px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="l2.png" alt="my logo here">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#client-section">Clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> welcome to my online meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quas esse perspiciatis. this is my
+            website.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png" alt="image2">
+                <h2 class="h-secondry center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio,
+                    nostrum fuga ut repudiandae impedit saepe non, id fugit asperiores quibusdam quos aliquid
+                    consequuntur soluta molestias sunt consequatur veritatis debitis ratione porro tenetur delectus?</p>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="image2">
+                <h2 class="h-secondry center">Food Catring</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio,
+                    nostrum fuga ut repudiandae impedit saepe non, id fugit asperiores quibusdam quos aliquid
+                    consequuntur soluta molestias sunt consequatur veritatis debitis ratione porro tenetur delectus?</p>
+            </div>
+            <div class="box">
+                <img src="3.png" alt="image2">
+                <h2 class="h-secondry center">Food Delivery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio,
+                    nostrum fuga ut repudiandae impedit saepe non, id fugit asperiores quibusdam quos aliquid
+                    consequuntur soluta molestias sunt consequatur veritatis debitis ratione porro tenetur delectus?</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+      
+        <div id="clients">
+             
+            <div class="client-item">
+                <img src="logo1.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="logo2.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="logo3.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="logo4.png" alt="Our client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Countact Us</h1>
+        
+            <div id="contact-box">
+                
+            <form action="/register" method="post">
+                <label for="name">Full name:</label>
+                <input type="text" id="fname" name="name" placeholder="Enter your full name" >
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email address" >
+                <label for="number">Number:</label>
+                <input type="text" id="number" name="number" placeholder="Enter your phone number" >
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option>india</option>
+                    <option>nepal</option>
+                    <option>usa</option>
+                    <option>others</option>
+                </select><br><br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Place Order  here...." rows="6px" cols="7px"></textarea><br>
+                <br>
+                <input type="submit" value="submit" id="btn" >
+                
+    
+            </form>
+            </div>
+        
+        
+    
+    </section>
+    <footer>
+        <div class="center">
+            <marquee direction="right" loop=" " >Copyright &copy; www.myOnlineMeal.com. All rights reserved!</marquee>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

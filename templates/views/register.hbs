@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .outerbox{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to top left,black,grey);
+            /* border: 2px solid green; */
+        }
+        .innerbox{
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            top:40%;
+            transform: translateY(-50%);
+            /* border: 2px solid red; */
+            padding: 20px 40px;
+            background-color: #fffcfc09;
+            backdrop-filter: blur(10px);
+            background: linear-gradient(to top left ,rgb(36, 35, 35),rgb(163, 162, 162));
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px #61696e;
+            z-index: 2;
+            
+
+        }
+        .signup h1{
+            font-size: 2rem;
+            color: black;
+        }
+        .signup p{
+            font-size: 1rem;
+            color: rgb(31, 30, 30);
+        }
+        .signupbody{
+            margin: 20px 0;
+        }
+        .signupbody p{
+            margin: 10px 0;
+            
+
+        }
+        .signupbody p label{
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            
+            
+        }
+        .signupbody p  input{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            border-radius: 6px;
+        }
+    
+        #submit{
+            background-color: #61696e;
+            border: 4px solid rgb(131, 142, 153);
+            color: rgb(5, 5, 5);
+            cursor: pointer;
+            font-size: 1.2rem;
+           width: 100%;
+        }
+        #submit:hover{
+            background-color: rgb(219, 149, 18);
+        }
+        .signupfooter p{
+            color: #000000;
+            text-align: center;
+        }
+        .signupfooter p a{
+            color: rgb(219, 157, 42) ;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(to top right,#ffffff44,rgb(0, 0, 0));
+            position: absolute;
+        }
+        .c1{
+            top: 10px;
+            left: 300px;
+        }
+        .c2{
+            bottom: 100px;
+            right: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outerbox">
+        <div class="innerbox">
+            <header class="signup">
+                <h1>Sign up!</h1>
+                <p>plz fill all your information correctly</p>
+            </header>
+            <main class="signupbody">
+                <form action="#">
+                    <p>
+                        <label for="fullname">Full name:</label>
+                        <input type="text" id="fullname" placeholder="Enter your full name" >
+                    </p>
+                    <p>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" placeholder="Enter your @ Email" >
+                    </p>
+                    <p>
+                        <label for="password">password:</label>
+                        <input type="password" id="password" placeholder="Enter your password" >
+                    </p>
+                    <p>
+                        
+                        <input type="submit" id="submit" value="Create account">
+                    </p>
+                </form>
+            </main>
+            <footer class="signupfooter">
+                <p>Already have an Account ? <a href="#"> Login !</a></p>
+
+            </footer>
+           
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        
+    </div>
+    
+</body>
+</html>
